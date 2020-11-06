@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#Bed_Room {
+    margin-left: 650px;
+    font-size: 25px;
+}
+
+#TV_and_AC {
+    margin-left: 650px;
+    font-size: 25px;
+}
+#Desk {
+    margin-left: 650px;
+    font-size: 25px;
+}
+#Bottles {
+    margin-left: 650px;
+    font-size: 25px;
+}
+#Fruit_Basket {
+    margin-left: 650px;
+    font-size: 25px;
+}
+
+a {
+	position: relative;
+	margin: 300px auto 0;
+	width: 500px;
+	height: 250px;
+	background: linear-gradient(0deg, #000, #272727);
+}
+
+a:before, a:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+a:after {
+	filter: blur(50px);
+}
